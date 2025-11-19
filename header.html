@@ -38,7 +38,7 @@
 					<div class="d-flex justify-content-between align-items-center">
 						
 						<div class="logo-box d-flex align-items-center flex-wrap">
-							<div class="logo"><a href="index.html"><img src="assets/images/desert-agri/logo/white-logo.jpg" alt="Desert Agriculture - Sustainable Hydroponics Solutions" title="Desert Agriculture" style="max-height: 80px; background: linear-gradient(135deg, #00b4d8 0%, #90e0ef 100%); padding: 10px 20px; border-radius: 8px;"></a></div>
+							<div class="logo"><a href="index.html"><img src="assets/images/desert-agri/logo/white-logo.jpg" alt="Desert Agriculture - Sustainable Hydroponics Solutions" title="Desert Agriculture" style="max-height: 80px; "></a></div>
 
 							<!-- About Widget -->
 							<span class="about-widget">
@@ -65,11 +65,13 @@
 								
 								<div class="navbar-collapse scroll-nav collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li class="current"><a href="index.html">Home</a></li>
+										<li><a href="index.html">Home</a></li>
 										<li><a href="about.html">About us</a></li>
 										<li><a href="products.html">Our Products</a></li>
 										<li><a href="clients.html">Clients</a></li>
+										<li><a href="gallery.html">Gallery</a></li>
 										<li><a href="contact.html">Contact</a></li>
+										<li><a href="Desert Agriculture Company Profile.pdf" download target="_blank">Company Profile</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -110,3 +112,53 @@
 			</nav>
 		</div>
 		<!-- End Mobile Menu -->
+		
+		<script>
+		// Set current navigation item based on current page
+		(function() {
+			function setCurrentNavItem() {
+				// Get current page filename
+				var currentPage = window.location.pathname.split('/').pop() || 'index.html';
+				
+				// Handle root path
+				if (currentPage === '' || currentPage === '/') {
+					currentPage = 'index.html';
+				}
+				
+				// Find all navigation links (both desktop and mobile)
+				var navLinks = document.querySelectorAll('.navigation li a, .mobile-menu .menu-outer .navigation li a');
+				
+				navLinks.forEach(function(link) {
+					var href = link.getAttribute('href');
+					
+					// Skip PDF links and external links
+					if (!href || href.includes('.pdf') || href.startsWith('http') || href.startsWith('//')) {
+						return;
+					}
+					
+					// Get the filename from href
+					var linkPage = href.split('/').pop();
+					
+					// Check if this link matches the current page
+					if (linkPage === currentPage || (currentPage === 'index.html' && (linkPage === 'index.html' || linkPage === ''))) {
+						// Add current class to parent li
+						var parentLi = link.closest('li');
+						if (parentLi) {
+							parentLi.classList.add('current');
+						}
+					}
+				});
+			}
+			
+			// Run immediately
+			setCurrentNavItem();
+			
+			// Also run after all sections are loaded (for mobile menu)
+			document.addEventListener('allSectionsLoaded', setCurrentNavItem);
+			
+			// Also run when content is loaded (jQuery event from loader.js)
+			if (typeof jQuery !== 'undefined') {
+				jQuery(document).on('contentLoaded', setCurrentNavItem);
+			}
+		})();
+		</script>

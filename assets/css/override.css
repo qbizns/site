@@ -1,0 +1,519 @@
+.service-block_three-icon{
+    bottom: -10px !important;
+}
+
+.page-title {
+    padding: 270px 0px 620px !important;
+    position: relative;
+}
+.page-title h2 {
+    text-transform: uppercase;
+    color: rgb(16, 117, 60);
+    font-weight: 700;
+    margin-bottom: 40px;
+    
+    /* White-ish "highlight" + darker "shadow" for bevel effect */
+    text-shadow:
+        -1px -1px 0 #ffffff,   /* top-left highlight */
+         1px  1px  0 #808080;  /* bottom-right shadow */
+}
+
+/* Nature's Harvest Brand Section */
+.nature-harvest-brand-section {
+    margin-top: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Left Panel: About the Brand */
+.brand-info-panel {
+    background: rgba(16, 117, 60, 0.85);
+    padding: 50px 40px;
+    border-radius: 8px;
+    height: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand-info-title {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'Outfit', serif;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.brand-info-text {
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+}
+
+/* Right Section: Brand Identity */
+.brand-identity-section {
+    padding: 20px 40px;
+    text-align: center;
+    position: relative;
+    min-height: 500px;
+}
+
+.brand-logo {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.brand-logo svg {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.brand-name-arabic {
+    color: white;
+    font-size: 56px;
+    font-weight: 600;
+    margin: 15px 0;
+    font-family: 'Outfit', serif;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    line-height: 1.2;
+}
+
+.brand-name-english {
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 10px 0;
+    font-family: 'Outfit', serif;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    line-height: 1.2;
+}
+
+.brand-slogan {
+    color: white;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Manrope', sans-serif;
+    margin: 15px 0 40px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+
+/* Product Attributes */
+.product-attributes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px 0;
+    max-width: 100%;
+}
+
+.attribute-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 0 0 auto;
+    min-width: 80px;
+}
+
+.attribute-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.attribute-icon svg {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+}
+
+.attribute-label {
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Saudi Made Logo */
+.saudi-made-logo {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    max-width: 150px;
+}
+
+.saudi-made-logo img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.3));
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .brand-info-panel {
+        margin-bottom: 40px;
+        min-height: auto;
+        padding: 40px 30px;
+    }
+    
+    .brand-identity-section {
+        padding: 20px 20px 100px;
+    }
+    
+    .brand-name-arabic {
+        font-size: 42px;
+    }
+    
+    .brand-name-english {
+        font-size: 36px;
+    }
+    
+    .brand-slogan {
+        font-size: 20px;
+    }
+    
+    .product-attributes {
+        gap: 15px;
+    }
+    
+    .attribute-item {
+        min-width: 70px;
+    }
+    
+    .attribute-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .saudi-made-logo {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin: 30px auto 0;
+        display: block;
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    .brand-info-title {
+        font-size: 32px;
+    }
+    
+    .brand-info-text {
+        font-size: 16px;
+    }
+    
+    .brand-name-arabic {
+        font-size: 36px;
+    }
+    
+    .brand-name-english {
+        font-size: 30px;
+    }
+    
+    .brand-slogan {
+        font-size: 18px;
+    }
+    
+    .product-attributes {
+        gap: 10px;
+    }
+    
+    .attribute-item {
+        min-width: 60px;
+    }
+    
+    .attribute-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .attribute-label {
+        font-size: 9px;
+    }
+}
+
+.client-block_image {
+    text-align: center;
+}
+
+/* ============================================
+   Modern Masonry Gallery Styles
+   ============================================ */
+
+/* Gallery Section */
+.gallery-section {
+    padding: 120px 0;
+    position: relative;
+    background: #f8f9fa;
+}
+
+.gallery-section .sec-title {
+    margin-bottom: 60px;
+}
+
+.gallery-section .sec-title_text {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Masonry Grid Container */
+.gallery-masonry-container {
+    column-count: 4;
+    column-gap: 20px;
+    padding: 0 15px;
+}
+
+/* Gallery Item */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    transform: translateY(30px);
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Gallery Link */
+.gallery-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gallery Image Wrapper */
+.gallery-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+/* Gallery Overlay */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(16, 117, 60, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 2;
+}
+
+/* Gallery Icon */
+.gallery-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-icon i {
+    font-size: 24px;
+    color: rgb(16, 117, 60);
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-item:hover .gallery-icon {
+    transform: scale(1);
+}
+
+/* Loading State */
+.gallery-item.loading {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 1400px) {
+    .gallery-masonry-container {
+        column-count: 4;
+    }
+}
+
+@media (max-width: 1199px) {
+    .gallery-masonry-container {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 991px) {
+    .gallery-section {
+        padding: 80px 0;
+    }
+    
+    .gallery-masonry-container {
+        column-count: 2;
+        column-gap: 15px;
+    }
+    
+    .gallery-item {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-section {
+        padding: 60px 0;
+    }
+    
+    .gallery-masonry-container {
+        column-count: 1;
+        column-gap: 15px;
+        padding: 0 10px;
+    }
+    
+    .gallery-item {
+        margin-bottom: 15px;
+    }
+    
+    .gallery-section .sec-title_text {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .gallery-masonry-container {
+        column-gap: 12px;
+    }
+    
+    .gallery-item {
+        margin-bottom: 12px;
+    }
+    
+    .gallery-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .gallery-icon i {
+        font-size: 20px;
+    }
+}
+
+/* Animation for Reveal */
+.gallery-item.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Magnific Popup Customization for Gallery */
+.mfp-gallery .mfp-image-holder .mfp-close {
+    color: #fff;
+    background: rgba(16, 117, 60, 0.8);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+}
+
+.mfp-gallery .mfp-arrow {
+    background: rgba(16, 117, 60, 0.8);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+.mfp-gallery .mfp-arrow:hover {
+    opacity: 1;
+    background: rgb(16, 117, 60);
+}
+
+.mfp-gallery .mfp-arrow-left {
+    left: 20px;
+}
+
+.mfp-gallery .mfp-arrow-right {
+    right: 20px;
+}
