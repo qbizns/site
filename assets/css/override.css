@@ -517,3 +517,29 @@
 .mfp-gallery .mfp-arrow-right {
     right: 20px;
 }
+
+.shop-block_one{
+    background-color: #eff1e9;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+span.xtitle {
+    background-color: #48a142;
+    color: #fff;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+}
+
+.h_img{
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+}
