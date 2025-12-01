@@ -520,7 +520,7 @@
 
 .shop-block_one{
     background-color: #eff1e9;
-    margin: 10px;
+
     border-radius: 15px;
 }
 
@@ -539,7 +539,9 @@ span.xtitle {
 }
 
 .h_img{
-    height: 180px;
+    height: 280px;
     object-fit: cover;
     border-radius: 15px;
+    margin: 0 auto;
+    display: block;
 }

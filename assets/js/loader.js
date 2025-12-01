@@ -423,7 +423,7 @@
 					loop: true,
 					autoplay: {
 						enabled: true,
-						delay: 6000,
+						delay: 10000,
 					},
 					// Navigation arrows
 					navigation: {
@@ -440,7 +440,7 @@
 							return '<span class="' + className + '">' + formattedIndex + "</span>";
 						},
 					},
-					speed: 500,
+					speed: 800,
 					breakpoints: {
 						'1600': {
 							slidesPerView: 1,
